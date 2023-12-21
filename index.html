@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Курс "Как не попасться инфоцыганам"</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Our code -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container-fluid">
+        <h1 class="light">
+            <img src="https://img.icons8.com/glyph-neue/64/fff1e6/book--v1.png" width="50px" height="50px">
+            Курс "Как не попасться инфоцыганам"
+        </h1>
+    </div>
+</nav>
+<div class="row mt-2 mx-3 back">
+    <div class="col-7">
+        <div id="carouselImages" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://prosvet.press/wp-content/uploads/2023/05/maxresdefault-1-1-1024x576.jpg" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://stihi.ru/pics/2023/05/05/1928.jpg" class="d-block">
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://pic.rutubelist.ru/video/82/82/82821654addfa21417822bc34b66567e.jpg" class="d-block">
+                </div>
+            </div>
+            <button class="carousel-control-prev bgg" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bgg" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="col-5 back">
+        <div class="row back">
+            <img width="300px" height="300px"
+                 src="https://motor25.nethouse.ru/static/img/0000/0005/2736/52736863.70hitotcmc.W665.png">
+        </div>
+        <div class="row mt-4 back">
+            <p class="dark">С каждым годом на просторах интернета становится всё больше инфоцыган, и мы расскажем вам, как обезопасить себя от их уловок и не потратить деньги впустую</p>
+            <button class="btn bgg light" data-bs-toggle="modal" data-bs-target="#buyModal">КУПИТЬ ПРЯМО СЕЙЧАС!!!</button>
+        </div>
+    </div>
+</div>
+<div class="row mt-4 mx-3 back">
+    <div class="alert alert-danger text-center bg_dark light" role="alert">
+        <b>ДО КОНЦА АКЦИИ 2 МИНУТЫ. КУПИТЕ ПРЯМО СЕЙЧАС!</b> <br>
+        <b id="countdown">Таймер запускается...</b>
+    </div>
+</div>
+
+<div class="row back">
+    <div class="col pd-4">
+        <h1 class="text-center dark">Отзывы наших клиентов</h1>
+        <br><br>
+        <div id="carouselImages1" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://sun1-16.userapi.com/s/v1/if1/BOquPCzE1SeFSbnBAzpM4GIa7rfERw8XyoSu5JLsumM0yJ2-Kx1MmgRRpZsrK5MGQ4MAAlqb.jpg?size=400x400&quality=96&crop=135,3,610,610&ava=1" class="d-block round">
+                    <p class="text-center mt-4 dark"><b>Евлампий</b>
+                        <br> «Благодаря этому курсу я могу быть уверен, что никто в интернете меня не разведёт»
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://sun9-61.userapi.com/impg/mFOZsKvYkqzV_fDnBTslSrHUaUhDGeINp4Ra2g/-IyAS5-I1mA.jpg?size=604x554&quality=96&sign=985ffe60bc4d4d772f0ba6a2b4f69368&type=album" class="d-block round">
+                    <p class="text-center mt-4 dark"><b>Акулина</b>
+                        <br> «Раньше я боялась наткнуться на мошенников, но теперь спокойна»
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://sun9-70.userapi.com/impf/L74SS5164gvQsPjAvDkKAcHbO2bcC6qEMyjM1Q/A_uTLzC8Na4.jpg?size=500x552&quality=96&sign=4f23435a51b3c22b92b3d9f8cee77f55&type=album" class="d-block round">
+                    <p class="text-center mt-4 dark"><b>Аристарх и Январина</b>
+                        <br> «Нам очень понравился курс, уже порекомендовали всем знакомым!»
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://sg.latitudepay.com/wp-content/uploads/elementor/thumbs/business-career-and-placement-concept-satisfied-ca-DBZQJEH-p1cb22bss5bvmbi7ekohgdt07022en51udf7j1a1xo.jpg" class="d-block round">
+                    <p class="text-center mt-4 dark"><b>Акакий</b>
+                        <br> «О курсе я узнал от знакомых и счастлив, что прошёл его»
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://krassp24.ru/files/8c7/8c719462f8f87827df0c6c506aa3acd9.png" class="d-block round">
+                    <p class="text-center mt-4 dark"><b>Левонтий</b>
+                        <br> «Я в своем познании настолько преисполнился, что я как будто бы уже
+                        сто триллионов миллиардов лет проживаю на триллионах и
+                        триллионах таких же планет, как эта Земля, мне этот мир абсолютно
+                        понятен, и я здесь ищу только одного - покоя, умиротворения и
+                        вот этой гармонии, от слияния с бесконечно вечным, от созерцания
+                        великого фрактального подобия и от вот этого замечательного всеединства
+                        существа, бесконечно вечного, куда ни посмотри. <br>
+                        Благодаря этому курсу я нашёл себя!»
+                    </p>
+                </div>
+            </div>
+            <button class="carousel-control-prev bgg" type="button" data-bs-target="#carouselImages1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bgg" type="button" data-bs-target="#carouselImages1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row back mt-4">
+    <h1 class="text-center dark">Как мы работаем?</h1>
+    <br><br><br>
+    <div class="col">
+        <div class="text-center">
+            <img class="icon" src="https://img.icons8.com/ios/50/b3a091/bank-card-back-side--v1.png">
+            <br><br>
+            <p class = "dark"><b>Покупка курса</b></p>
+          </div>
+    </div>
+    
+    <div class="col">
+        <div class="text-center">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/b3a091/signing-a-document.png">
+            <br><br>
+            <p class = "dark"><b>Заполнение анкеты</b></p>
+          </div>
+    </div>
+    
+    <div class="col">
+        <div class="text-center">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/b3a091/saving-book.png">
+            <br><br>
+            <p class = "dark"><b>Обучение</b></p>
+          </div>
+    </div>
+
+    <div class="col">
+        <div class="text-center">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/b3a091/education.png">
+            <br><br>
+            <p class = "dark"><b>Получение сертификата</b></p>
+          </div>
+    </div>
+</div>
+<div class="row back mt-4">
+    <div class="col">
+        <div class="text-center">
+            <h1 class="dark mt-4">Хочу на курс!</h1>
+            <button class="btn bg_dark light mt-4 big_buy" data-bs-toggle="modal" data-bs-target="#buyModal">КУПИТЬ</button>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="buyModalLabel">Купить курс!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>Обезопасьте себя!</p>
+          <p>Цена: <span id="cost">1 500 руб. <s>3 000 руб.</s></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg_dark light" data-bs-dismiss="modal">В следующий раз</button>
+        <button type="button" class="btn bgg light" id="buy">Купить</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

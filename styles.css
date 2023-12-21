@@ -1,0 +1,77 @@
+.round {
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: #cb997e;
+}
+.dark {
+    color: #826e5a;
+}
+.light {
+    color: #fff1e6;
+}
+.navbar-brand {
+    font-size: 30px;
+}
+
+nav{
+    background-color: rgb(231, 241, 244);
+    border-bottom: 1px solid black;
+}
+
+div.carousel-item img {
+    width: auto;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.carousel-item p{   
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    background-color: rgb(220, 246, 246);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.red-text {
+    color: red;
+}
+
+b {
+    font-size: 25px;
+}
+
+body {
+    background-color: #fff1e6;
+}
+.back {
+    background-color: #eddcd2;
+}
+.bg_dark {
+    background-color: #cb997e;
+}
+
+p {
+    font-size: 21px;
+}
+.btn {
+    font-size: 30px;
+}
+.bgg {
+    background-color: #826e5a;
+}
+
+.icon {
+    width: auto;
+    height: 75px;
+}
+.big_buy {
+    font-size: 30px;
+    width: 50%;
+    height: 75px;
+}
